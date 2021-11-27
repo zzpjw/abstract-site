@@ -38,6 +38,8 @@ describe('Site 요구사항 테스트', () => {
             mySite.addBoard(noticeBoard);
             mySite.addBoard(faqBoard);
         }).not.toThrow();
+
+        expect(mySite.boards).toEqual([noticeBoard, faqBoard]);
     });
 });
 
