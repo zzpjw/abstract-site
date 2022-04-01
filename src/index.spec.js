@@ -73,7 +73,6 @@ describe('Board 요구사항 테스트', () => {
         const notAddedBoard = new Board('사이트에 추가되지 않은 게시판');
 
         mySite.addBoard(addedBoard);
-
         expect(() => {
             const article = new Article({
                 subject: '글 제목',
